@@ -2,7 +2,10 @@ package com.primeiroteste.minhasfinancas.model.entity;
 
 import com.primeiroteste.minhasfinancas.model.enums.StatusLancamento;
 import com.primeiroteste.minhasfinancas.model.enums.TipoLancamento;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 import javax.persistence.*;
@@ -12,6 +15,9 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "lancamento", schema = "financas")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento {
 
     @Id

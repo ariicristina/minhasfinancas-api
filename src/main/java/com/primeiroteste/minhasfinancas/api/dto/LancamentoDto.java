@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 
 @Data
-@Builder
 public class LancamentoDto {
 
     private Long id;

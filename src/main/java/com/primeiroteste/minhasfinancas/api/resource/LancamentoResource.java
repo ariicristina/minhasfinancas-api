@@ -25,7 +25,7 @@ public class LancamentoResource {
     private final LancamentoService service;
     private final UsuarioService usuarioService;
 
-    //metodo de buscar lancamentos
+
     @GetMapping
     public ResponseEntity buscar(@RequestParam(value= "descricao", required = false) String descricao,
                                  @RequestParam(value="mes", required = false) Integer mes,
